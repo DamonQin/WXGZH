@@ -10,4 +10,4 @@ before_install:
   - cat ~/.ssh/config
   - npm install pm2 -g
 after_success:
-  - pm2 deploy ecosystem.config.js dev
+  - pm2 deploy ecosystem.config.js dev setup
