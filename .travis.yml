@@ -10,4 +10,4 @@ before_install:
   - npm install pm2 -g
 after_success:
   - npm prune --production
-  - pm2 deploy ecosystem.config.js dev
+  - pm2 deploy ecosystem.config.js dev --force
