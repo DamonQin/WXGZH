@@ -7,7 +7,7 @@ before_install:
     -in guson.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host damon.xcworld.cn\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-  - ssh -T root@damon.xcworld.cn
+  - ssh -t damon.xcworld.cn
   - npm install pm2 -g
 after_success:
   - npm prune --production
