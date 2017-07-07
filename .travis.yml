@@ -9,6 +9,4 @@ before_install:
   - echo -e "Host damon.xcworld.cn\n\tUser root\n\tHostname damon.xcworld.cn\n\tIdentityFile ~/.ssh/guson\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - npm install pm2 -g
 after_success:
-  - npm prune --production
-  - git status
   - pm2 deploy ecosystem.config.js dev
