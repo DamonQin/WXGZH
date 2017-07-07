@@ -36,7 +36,7 @@ module.exports = {
     },
     dev : {
       user : 'root',
-      host : 'guson',
+      host : 'damon.xcworld.cn',
       ref  : 'origin/master',
       repo : 'git@github.com:DamonQin/WXGZH.git',
       path : '/srv/www/wx-dev',
