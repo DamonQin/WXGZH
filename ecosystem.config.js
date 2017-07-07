@@ -40,6 +40,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:DamonQin/WXGZH.git',
       path : '/srv/www/wx-dev',
+      "pre-deploy-local" : "git status",
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       "ssh_options": ["StrictHostKeyChecking=no", "PasswordAuthentication=no"],
       env  : {
